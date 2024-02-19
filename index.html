@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container pt-2">
+        <h1 class="pb-3 text-muted">bookmarker</h1>
+        <hr>
+
+        <div class="form-project text-center my-5 py-4 bg-body-secondary">
+            <h2>bookmark yout favorite site</h2>
+            <div class="form-group mx-5">
+                <label class="text-center fw-bold">site name</label>
+                <input id="name" class="form-control" placeholder="bookmark name"  type="text">
+            </div>
+            <div class="form-group mx-5">
+                <label class="text-center mx-auto fw-bold">website url</label>
+                <input id="url" class="form-control" placeholder="bookmark name"  type="text">
+            </div>
+            <button id="addbtn" class="btn btn-primary my-4"> submit</button>
+        <input onkeyup="search(this.value)" class="my-3 form-control" placeholder="search by bookmark name">
+
+
+        </div>
+        <div class="output">
+            <table class="table">
+                <thead>
+                </thead>
+                <tbody id="tableBody">
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
